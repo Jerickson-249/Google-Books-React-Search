@@ -7,18 +7,12 @@ import Search from "./Containers/Search";
 class App extends Component{
   render(){
     return(
-      <Router>
-      <Header/>
-      <Switch>
-        <Route>
-          <Saved/>
-        </Route>
-        <Route>
-          <Search/>
-        </Route>
-      </Switch>
-      </Router>
-
+     <Router>
+       <Header/>
+       <Route path="/">
+         <Search/>
+       </Route>
+       </Router> 
     )
   }
 }
